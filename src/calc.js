@@ -24,8 +24,10 @@ export class Calculator
     const jupiter = 11.86;
     return Math.floor(this.age/jupiter);
   }
-  mercAgeExpect()
+  mercAgeExpect(ageExpect)
   {
-    
+    let yearsLeft = ageExpect - this.age;
+    const merc = .24;
+    return Math.floor(yearsLeft/merc);
   }
 }

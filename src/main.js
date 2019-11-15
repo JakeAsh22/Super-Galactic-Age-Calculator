@@ -2,7 +2,15 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 import $ from 'jquery';
-import { CALC } from './calc.js';
+import {Calculator} from './../src/calc.js';
 
-$(document).ready(function() {
+$(document).ready(function()
+{
+  $("form#ageForm").submit(function(event)
+  {
+    event.preventDeault();
+    let age = parseInt($("#ageInput").val());
+    let userAge = new Calculator(age);
+    $(".userAgeMerc").text(userAge.mercAge());
+  });
 });

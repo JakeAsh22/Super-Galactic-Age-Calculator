@@ -16,6 +16,7 @@ export class Calculator
   }
   marsAge()
   {
-    
+    const mars = 1.88;
+    return Math.floor(this.age/mars);
   }
 }

@@ -29,7 +29,7 @@ export class Calculator
     const merc = .24;
     if (this.age>ageExpect)
     {
-      let overage = this.age - ageExpect
+      let overage = this.age - ageExpect;
       return Math.floor(overage/merc);
     }
     else
@@ -43,7 +43,7 @@ export class Calculator
     const venus = .62;
     if (this.age>ageExpect)
     {
-      let overage = this.age - ageExpect
+      let overage = this.age - ageExpect;
       return Math.floor(overage/venus);
     }
     else
@@ -58,7 +58,7 @@ export class Calculator
     const mars = 1.88;
     if (this.age>ageExpect)
     {
-      let overage = this.age - ageExpect
+      let overage = this.age - ageExpect;
       return Math.floor(overage/mars);
     }
     else
@@ -75,7 +75,7 @@ export class Calculator
 
     if (this.age>ageExpect)
     {
-      let overage = this.age - ageExpect
+      let overage = this.age - ageExpect;
       return Math.floor(overage/jupiter);
     }
     else

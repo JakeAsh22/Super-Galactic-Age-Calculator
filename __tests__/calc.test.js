@@ -9,6 +9,6 @@ describe('Calculator', () =>
   test('Should correctly test the age change from age on Earth to age on Venus', ()=>
   {
     var age = new Calculator(21);
-    expect(age.VenusAge()).toEqual(33);
+    expect(age.venusAge()).toEqual(33);
   });
 });

@@ -9,4 +9,8 @@ export class Calculator
     const merc = .24;
     return Math.floor(this.age/merc);
   }
+  venusAge()
+  {
+    
+  }
 }

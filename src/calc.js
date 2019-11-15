@@ -26,26 +26,63 @@ export class Calculator
   }
   mercAgeExpect(ageExpect)
   {
-    let yearsLeft = ageExpect - this.age;
     const merc = .24;
-    return Math.floor(yearsLeft/merc);
+    if (this.age>ageExpect)
+    {
+      let overage = this.age - ageExpect
+      return Math.floor(overage/merc);
+    }
+    else
+    {
+      let yearsLeft = ageExpect - this.age;
+      return Math.floor(yearsLeft/merc);
+    }
   }
   venusAgeExpect(ageExpect)
   {
-    let yearsLeft = ageExpect - this.age;
     const venus = .62;
-    return Math.floor(yearsLeft/venus);
+    if (this.age>ageExpect)
+    {
+      let overage = this.age - ageExpect
+      return Math.floor(overage/venus);
+    }
+    else
+    {
+      let yearsLeft = ageExpect - this.age;
+      return Math.floor(yearsLeft/venus);
+    }
+
   }
   marsAgeExpect(ageExpect)
   {
-    let yearsLeft = ageExpect - this.age;
     const mars = 1.88;
-    return Math.floor(yearsLeft/mars);
+    if (this.age>ageExpect)
+    {
+      let overage = this.age - ageExpect
+      return Math.floor(overage/mars);
+    }
+    else
+    {
+      let yearsLeft = ageExpect - this.age;
+      return Math.floor(yearsLeft/mars);
+    }
+
+
   }
   jupiterAgeExpect(ageExpect)
   {
-    let yearsLeft = ageExpect - this.age;
     const jupiter = 11.86;
-    return Math.floor(yearsLeft/jupiter);
+
+    if (this.age>ageExpect)
+    {
+      let overage = this.age - ageExpect
+      return Math.floor(overage/jupiter);
+    }
+    else
+    {
+      let yearsLeft = ageExpect - this.age;
+      return Math.floor(yearsLeft/jupiter);
+    }
+
   }
 }

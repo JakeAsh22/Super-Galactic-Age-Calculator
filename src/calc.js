@@ -11,6 +11,7 @@ export class Calculator
   }
   venusAge()
   {
-    
+    const venus = .62;
+    return Math.floor(this.age/venus);
   }
 }

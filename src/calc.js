@@ -19,4 +19,8 @@ export class Calculator
     const mars = 1.88;
     return Math.floor(this.age/mars);
   }
+  jupiterAge()
+  {
+    
+  }
 }

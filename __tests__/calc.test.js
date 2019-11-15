@@ -16,4 +16,9 @@ describe('Calculator', () =>
     var age = new Calculator(21);
     expect(age.marsAge()).toEqual(11);
   });
+  test('Should correctly test the age change from age on Earth to age on Jupiter', ()=>
+  {
+    var age = new Calculator(21);
+    expect(age.jupiterAge()).toEqual(1);
+  });
 });

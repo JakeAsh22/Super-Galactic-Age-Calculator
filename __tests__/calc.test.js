@@ -24,6 +24,7 @@ describe('Calculator', () =>
   test('Should correctly test how long somebody has left on Mercury', ()=>
   {
     let age = new Calculator(21);
-    expect(age.jupiterAge()).toEqual(1);
+    const ageExpect = 80;
+    expect(age.mercAgeExpect(ageExpect)).toEqual(245);
   });
 });

@@ -1,4 +1,4 @@
-import {Calculator} from './../src/clac.js';
+import {Calculator} from './../src/calc.js';
 describe('Calculator', () =>
 {
   test('Should correctly test the age change from age on Earth to age on Mercury', ()=>

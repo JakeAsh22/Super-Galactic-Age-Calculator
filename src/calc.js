@@ -14,4 +14,8 @@ export class Calculator
     const venus = .62;
     return Math.floor(this.age/venus);
   }
+  marsAge()
+  {
+    
+  }
 }

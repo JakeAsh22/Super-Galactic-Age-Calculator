@@ -21,6 +21,7 @@ export class Calculator
   }
   jupiterAge()
   {
-    
+    const jupiter = 11.86;
+    return Math.floor(this.age/jupiter);
   }
 }

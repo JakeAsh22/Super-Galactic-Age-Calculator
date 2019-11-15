@@ -42,7 +42,7 @@ export class Calculator
     const mars = 1.88;
     return Math.floor(yearsLeft/mars);
   }
-  venusAgeExpect(ageExpect)
+  jupiterAgeExpect(ageExpect)
   {
     let yearsLeft = ageExpect - this.age;
     const jupiter = 11.86;

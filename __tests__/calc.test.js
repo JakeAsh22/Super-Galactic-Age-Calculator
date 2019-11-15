@@ -27,4 +27,22 @@ describe('Calculator', () =>
     const ageExpect = 80;
     expect(age.mercAgeExpect(ageExpect)).toEqual(245);
   });
+  test('Should correctly test how long somebody has left on Venus', ()=>
+  {
+    let age = new Calculator(21);
+    const ageExpect = 80;
+    expect(age.venusAgeExpect(ageExpect)).toEqual(245);
+  });
+  test('Should correctly test how long somebody has left on Mars', ()=>
+  {
+    let age = new Calculator(21);
+    const ageExpect = 80;
+    expect(age.marsAgeExpect(ageExpect)).toEqual(245);
+  });
+  test('Should correctly test how long somebody has left on Jupiter', ()=>
+  {
+    let age = new Calculator(21);
+    const ageExpect = 80;
+    expect(age.jupiterAgeExpect(ageExpect)).toEqual(245);
+  });
 });

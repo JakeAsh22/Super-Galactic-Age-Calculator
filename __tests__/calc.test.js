@@ -6,4 +6,9 @@ describe('Calculator', () =>
     var age = new Calculator(21);
     expect(age.mercAge()).toEqual(87);
   });
+  test('Should correctly test the age change from age on Earth to age on Venus', ()=>
+  {
+    var age = new Calculator(21);
+    expect(age.VenusAge()).toEqual(33);
+  });
 });

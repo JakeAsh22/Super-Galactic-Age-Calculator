@@ -11,8 +11,23 @@ $("document").ready(function()
   {
     let age = parseInt($("input#ageInput").val());
     let userAge = new Calculator(age);
-    $(".userAgeMerc").text(userAge.mercAge());
-
+    $("#mercury").click(function()
+    {
+      $(".userAgeMerc").text(userAge.mercAge());
+    });
+    $("#venus").click(function()
+    {
+      $(".userAgeVenus").text(userAge.venusAge());
+    });
+    $("#mars").click(function()
+    {
+      $(".userAgeMars").text(userAge.marsAge());
+    });
+    $("#jupiter").click(function()
+    {
+      $(".userAgeJupiter").text(userAge.jupiterAge());
+    });
   });
+
 
 });

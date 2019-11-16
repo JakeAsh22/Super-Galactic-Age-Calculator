@@ -12,17 +12,24 @@
       <form id="ageForm">
         <label for="ageInput">Please Enter your age</label>
         <input type="number" id="ageInput">
-        <button type="button">Find out your age for each planet!</button>
+        <label for="ageExp">Please Enter life expenctincy age</label>
+        <input type="number" id="ageExp">
+        <button type="button" class="btn btn-info">Find out your age for each planet!</button>
       </form>
       <h2>Please pick your planet: </h2><br>
       <button type="button" id="mercury" class="btn btn-info">Mercury</button>
       <button type="button" id="venus" class="btn btn-success">Venus</button>
       <button type="button" id="mars" class="btn btn-warning">Mars</button>
       <button type="button" id="jupiter" class="btn btn-danger">Jupiter</button>
-      <p>Your age on Mercury is: <span class = "userAgeMerc"></span>. You have around <span class="mercYears"></span> years left.</p>
-      <p>Your age on Venus is: <span class = "userAgeVenus"></span></p>
-      <p>Your age on Mars is: <span class = "userAgeMars"></span></p>
-      <p>Your age on Jupiter is: <span class = "userAgeJupiter"></span></p>
+
+      <div class="card">
+        <div class="card body">
+          <p class="results mercResults" >Your age on Mercury is: <span class = "userAgeMerc"></span>. <span class="mercYears"></span></p>
+          <p class="results venusResults">Your age on Venus is: <span class = "userAgeVenus"></span>. <span class="venusYears"></span></p>
+          <p class="results marsResults">Your age on Mars is: <span class = "userAgeMars"></span>. <span class="marsYears"></span></p>
+          <p class="results jupiterResults">Your age on Jupiter is: <span class = "userAgeJupiter"></span>. <span class="jupiterYears"></span></p>
+        </div>
+      </div>
     </div>
   </body>
 </html>

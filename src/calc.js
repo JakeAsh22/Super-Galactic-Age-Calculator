@@ -1,8 +1,9 @@
 export class Calculator
 {
-  constructor (age)
+  constructor (age, avgAge)
   {
-    this.age = age;
+    this.age = age,
+    this.avgAge = avgAge
   }
   mercAge()
   {
@@ -24,63 +25,63 @@ export class Calculator
     const jupiter = 11.86;
     return Math.floor(this.age/jupiter);
   }
-  mercAgeExpect(ageExpect)
+  mercAgeExpect()
   {
     const merc = .24;
-    if (this.age>ageExpect)
+    if (this.age>this.avgAge)
     {
-      let overage = this.age - ageExpect;
+      let overage = this.age - this.avgAge;
       return Math.floor(overage/merc);
     }
     else
     {
-      let yearsLeft = ageExpect - this.age;
+      let yearsLeft = this.avgAge - this.age;
       return Math.floor(yearsLeft/merc);
     }
   }
-  venusAgeExpect(ageExpect)
+  venusAgeExpect()
   {
     const venus = .62;
-    if (this.age>ageExpect)
+    if (this.age>this.avgAge)
     {
-      let overage = this.age - ageExpect;
+      let overage = this.age - this.avgAge;
       return Math.floor(overage/venus);
     }
     else
     {
-      let yearsLeft = ageExpect - this.age;
+      let yearsLeft = this.avgAge - this.age;
       return Math.floor(yearsLeft/venus);
     }
 
   }
-  marsAgeExpect(ageExpect)
+  marsAgeExpect()
   {
     const mars = 1.88;
-    if (this.age>ageExpect)
+    if (this.age>this.avgAge)
     {
-      let overage = this.age - ageExpect;
+      let overage = this.age - this.avgAge;
       return Math.floor(overage/mars);
     }
     else
     {
-      let yearsLeft = ageExpect - this.age;
+      let yearsLeft = this.avgAge - this.age;
       return Math.floor(yearsLeft/mars);
     }
 
 
   }
-  jupiterAgeExpect(ageExpect)
+  jupiterAgeExpect()
   {
     const jupiter = 11.86;
 
-    if (this.age>ageExpect)
+    if (this.age>this.avgAge)
     {
-      let overage = this.age - ageExpect;
+      let overage = this.age - this.avgAge;
       return Math.floor(overage/jupiter);
     }
     else
     {
-      let yearsLeft = ageExpect - this.age;
+      let yearsLeft = this.avgAge - this.age;
       return Math.floor(yearsLeft/jupiter);
     }
 

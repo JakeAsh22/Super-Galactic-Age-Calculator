@@ -7,68 +7,96 @@ import {Calculator} from './../src/calc.js';
 
 $("document").ready(function()
 {
-  $("form#ageForm").click(function()
+  $("#ageButton").click(function()
   {
     let age = parseInt($("input#ageInput").val());
     let avgAge = parseInt($("input#ageExp").val());
-    let userAge = new Calculator(age,avgAge);
+    if (age<0 || isNaN(age) || avgAge<0 || isNaN(avgAge))
+    {
+      alert("Please Enter positive numbers");
+    }
+
     $("#mercury").click(function()
     {
+      let userAge = new Calculator(age,avgAge,.24);
       $(".results").hide();
       $(".mercResults").show();
-      $(".userAgeMerc").text(userAge.mercAge());
-      if (age<avgAge)
+      $(".cardResults").show();
+      $(".userAgeMerc").text(userAge.findAge());
+      if (age==avgAge)
       {
-        $(".mercYears").text("You have an expected "+ userAge.mercAgeExpect()+ " years left. Make the most of it!");
+        $(".mercYears").text("You have "+ userAge.ageExpect()+ " years left. Time to work on that bucket list!");
+      }
+      else if (age<avgAge)
+      {
+        $(".mercYears").text("You have an expected "+ userAge.ageExpect()+ " years left. Make the most of it!");
       }
       else
       {
-        $(".mercYears").text("You have lived " + userAge.mercAgeExpect() + " year[s] longer than expected!");
+        $(".mercYears").text("You have lived " + userAge.ageExpect() + " year[s] longer than expected!");
       }
     });
 
     $("#venus").click(function()
     {
+      let userAge = new Calculator(age,avgAge,.62);
       $(".results").hide();
+      $(".cardResults").show();
       $(".venusResults").show();
-      $(".userAgeVenus").text(userAge.venusAge());
-      if (age<avgAge)
+      $(".userAgeVenus").text(userAge.findAge());
+      if (age==avgAge)
       {
-        $(".venusYears").text("You have an expected "+ userAge.venusAgeExpect()+ " years left. Make the most of it!");
+        $(".venusYears").text("You have "+ userAge.ageExpect()+ " years left. Time to work on that bucket list!");
+      }
+      else if (age<avgAge)
+      {
+        $(".venusYears").text("You have an expected "+ userAge.ageExpect()+ " years left. Make the most of it!");
       }
       else
       {
-        $(".venusYears").text("You have lived " + userAge.venusAgeExpect() + " year[s] longer than expected!");
+        $(".venusYears").text("You have lived " + userAge.ageExpect() + " year[s] longer than expected!");
       }
     });
 
     $("#mars").click(function()
     {
+      let userAge = new Calculator(age,avgAge,1.88);
       $(".results").hide();
+      $(".cardResults").show();
       $(".marsResults").show();
-      $(".userAgeMars").text(userAge.marsAge());
-      if (age<avgAge)
+      $(".userAgeMars").text(userAge.findAge());
+      if (age==avgAge)
       {
-        $(".marsYears").text("You have an expected "+ userAge.marsAgeExpect()+ " years left. Make the most of it!");
+        $(".marsYears").text("You have  "+ userAge.ageExpect()+ " years left. Time to work on that bucket list!");
+      }
+      else if (age<avgAge)
+      {
+        $(".marsYears").text("You have an expected "+ userAge.ageExpect()+ " years left. Make the most of it!");
       }
       else
       {
-        $(".marsYears").text("You have lived " + userAge.marsAgeExpect() + " year[s] longer than expected!");
+        $(".marsYears").text("You have lived " + userAge.ageExpect() + " year[s] longer than expected!");
       }
     });
 
     $("#jupiter").click(function()
     {
+      let userAge = new Calculator(age,avgAge,11.86);
       $(".results").hide();
+      $(".cardResults").show();
       $(".jupiterResults").show();
-      $(".userAgeJupiter").text(userAge.jupiterAge());
-      if (age<avgAge)
+      $(".userAgeJupiter").text(userAge.findAge());
+      if (age==avgAge)
       {
-        $(".jupiterYears").text("You have an expected "+ userAge.jupiterAgeExpect()+ " years left. Make the most of it!");
+        $(".jupiterYears").text("You have "+ userAge.ageExpect()+ " years left. Time to work on that bucket list!");
+      }
+      else if (age<avgAge)
+      {
+        $(".jupiterYears").text("You have an expected "+ userAge.ageExpect()+ " years left. Make the most of it!");
       }
       else
       {
-        $(".jupiterYears").text("You have lived " + userAge.jupiterAgeExpect() + " year[s] longer than expected!");
+        $(".jupiterYears").text("You have lived " + userAge.ageExpect() + " year[s] longer than expected!");
       }
     });
   });

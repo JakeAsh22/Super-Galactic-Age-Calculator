@@ -1,89 +1,27 @@
 export class Calculator
 {
-  constructor (age, avgAge)
+  constructor (age, avgAge, planets)
   {
     this.age = age,
-    this.avgAge = avgAge
+    this.avgAge = avgAge,
+    this.planets = planets;
   }
-  mercAge()
+  findAge()
   {
-    const merc = .24;
-    return Math.floor(this.age/merc);
+    return Math.floor(this.age/this.planets);
   }
-  venusAge()
+  ageExpect()
   {
-    const venus = .62;
-    return Math.floor(this.age/venus);
-  }
-  marsAge()
-  {
-    const mars = 1.88;
-    return Math.floor(this.age/mars);
-  }
-  jupiterAge()
-  {
-    const jupiter = 11.86;
-    return Math.floor(this.age/jupiter);
-  }
-  mercAgeExpect()
-  {
-    const merc = .24;
-    if (this.age>this.avgAge)
-    {
-      let overage = this.age - this.avgAge;
-      return Math.floor(overage/merc);
-    }
-    else
-    {
-      let yearsLeft = this.avgAge - this.age;
-      return Math.floor(yearsLeft/merc);
-    }
-  }
-  venusAgeExpect()
-  {
-    const venus = .62;
-    if (this.age>this.avgAge)
-    {
-      let overage = this.age - this.avgAge;
-      return Math.floor(overage/venus);
-    }
-    else
-    {
-      let yearsLeft = this.avgAge - this.age;
-      return Math.floor(yearsLeft/venus);
-    }
-
-  }
-  marsAgeExpect()
-  {
-    const mars = 1.88;
-    if (this.age>this.avgAge)
-    {
-      let overage = this.age - this.avgAge;
-      return Math.floor(overage/mars);
-    }
-    else
-    {
-      let yearsLeft = this.avgAge - this.age;
-      return Math.floor(yearsLeft/mars);
-    }
-
-
-  }
-  jupiterAgeExpect()
-  {
-    const jupiter = 11.86;
 
     if (this.age>this.avgAge)
     {
       let overage = this.age - this.avgAge;
-      return Math.floor(overage/jupiter);
+      return Math.floor(overage/this.planets);
     }
     else
     {
       let yearsLeft = this.avgAge - this.age;
-      return Math.floor(yearsLeft/jupiter);
+      return Math.floor(yearsLeft/this.planets);
     }
-
   }
 }

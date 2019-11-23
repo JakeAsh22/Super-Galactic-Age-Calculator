@@ -10,16 +10,22 @@ _**Jacob Ash**_
 This website allows the user to input their age, and how old they are expecting to live.  It will then have the user click on which planet they would like to see, and the information will be displayed.  It will show age, how many more years they are expected to have left, or if they are over that age how many years they have lived past.
 
 ## Setup and Installation
-To set up and install this website, download the master branch off Github, and then open the CMD.  Inside, run npm install, and then npm run build.  After that, run npm start and the local host of the webste should open.
+To set up and install this website, download the master branch off Github, and then open the CMD.  Inside, run npm install, and then npm run build.  After that, run npm start and the local host of the website should open.
 
 ## Specs
 
-* 1: Test to see if the user inputted number will run properly for the Mercury age.
-* 2: Test to see if the user inputted number will run properly for the Venus age.
-* 3: Test to see if the user inputted number will run properly for the Mars age.
-* 4: Test to see if the user inputted number will run properly for the Jupiter age.
-* 5: Add user functionality
-* 6: Display the user inputted results instead of preinstalled.
+* 1: The user will input their age, and their expected age on Earth, and see both their current age and remaining years on Mercury.
+  * Input: Age - 21 Age expectancy - 80.
+  * Output: Mercury Age - 87 Mercury age expectancy - 245
+* 2: The user will input their age, and their expected age on Earth, and see both their current age and remaining years on Venus.
+* Input: Age - 21 Age expectancy - 80.
+* Output: Venus Age - 33 Mercury age expectancy - 95
+* 3: The user will input their age, and their expected age on Earth, and see both their current age and remaining years on Mars.
+* Input: Age - 21 Age expectancy - 80.
+* Output: Mars Age - 11 Mercury age expectancy - 31
+* 4: The user will input their age, and their expected age on Earth, and see both their current age and remaining years on Jupiter.
+* Input: Age - 21 Age expectancy - 80.
+* Output: Mercury Age - 1 Mercury age expectancy - 4
 ### License
 MIT License
 

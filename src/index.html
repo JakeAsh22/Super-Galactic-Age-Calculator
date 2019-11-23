@@ -10,11 +10,11 @@
         <h1>Galaxy Age Calculator</h1>
       </div>
       <form id="ageForm">
-        <label for="ageInput">Please Enter your age</label>
-        <input type="number" id="ageInput">
-        <label for="ageExp">Please Enter life expenctincy age</label>
-        <input type="number" id="ageExp">
-        <button type="button" class="btn btn-info">Find out your age for each planet!</button>
+        <label for="ageInput">Please Enter your age: </label>
+        <input type="number" id="ageInput"><br>
+        <label for="ageExp">Please Enter life expectancy age: </label>
+        <input type="number" id="ageExp"><br>
+        <button type="button" class="btn btn-info" id="ageButton">Find out your age for each planet!</button>
       </form>
       <h2>Please pick your planet: </h2><br>
       <button type="button" id="mercury" class="btn btn-info">Mercury</button>
@@ -22,7 +22,7 @@
       <button type="button" id="mars" class="btn btn-warning">Mars</button>
       <button type="button" id="jupiter" class="btn btn-danger">Jupiter</button>
 
-      <div class="card">
+      <div class="card cardResults">
         <div class="card body">
           <p class="results mercResults" >Your age on Mercury is: <span class = "userAgeMerc"></span>. <span class="mercYears"></span></p>
           <p class="results venusResults">Your age on Venus is: <span class = "userAgeVenus"></span>. <span class="venusYears"></span></p>
